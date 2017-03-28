@@ -105,6 +105,13 @@ int main(int argc, char * argv[]){
     rec->print( std::cout );
   }
   std::cout << endl;
+
+  std::cout << "Total Class : " << std::endl;
+  std::sort( records.begin(), records.end());
+  for ( auto const & rec: records ) {
+    rec->print( std::cout );
+  }
+  std::cout << endl;
     
-  std::cout << "Total Class : " << calulate_total( records ) << std::endl;
+  std::cout << "Total score : " << calulate_total( records ) << std::endl;
 }
